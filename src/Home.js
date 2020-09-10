@@ -1,8 +1,12 @@
 import React from 'react';
 import './Home.css';
 import Product from './Product';
+import Slide from './Slide';
+import Trailer from './Trailer';
+
 
 function Home() {
+
     return (
         <div className="home">
             <div className="home__container">
@@ -27,7 +31,7 @@ function Home() {
                     <Product
                         id="12321348"
                         title="HP Pavilion Gaming DK0268TX 15.6-inch Laptop (Core i5-9300H/8GB/512GB SSD/Windows 10 Home/4GB NVIDIA GeForce GTX 1650 Graphics), Shadow Black"
-                        price={67, 490.00}
+                        price={67490.00}
                         rating={4}
                         image="https://m.media-amazon.com/images/I/41Hxk3Dl5RL.__AC_SY200_.jpg"
                     />
@@ -77,6 +81,9 @@ function Home() {
                         image="https://images-na.ssl-images-amazon.com/images/I/815a%2BXjrgvL._SX466_.jpg"
                     />
                 </div>
+
+
+                <Trailer />
 
                 <div className="home__row">
                     <Product
@@ -131,7 +138,50 @@ function Home() {
                         rating={4}
                         image="https://m.media-amazon.com/images/I/81Ac7KMx7RL._AC_UL320_.jpg"
                     />
+
                 </div>
+                <Slide />
+                <div className="home__row">
+                    <Product
+                        id="90829232"
+                        title="Samsung 138 cm (55 Inches) Wondertainment Series Ultra HD LED Smart TV UA55TUE60AKXXL (Titan Gray) (2020 model)"
+                        price={51990.0}
+                        rating={4}
+                        image="https://images-na.ssl-images-amazon.com/images/I/81a5%2BITwX4L._SL1500_.jpg"
+                    />
+                    <Product
+                        id="75066462"
+                        title="Samsung Galaxy Watch (Bluetooth, 42 mm) - Black"
+                        price={15990.0}
+                        rating={5}
+                        image="https://images-na.ssl-images-amazon.com/images/I/61ErvNimpvL._SL1500_.jpg"
+                    />
+                    <Product
+                        id="22414114"
+                        title="Samsung Galaxy Note 20 (Mystic Bronze, 8GB RAM, 256GB Storage) with No Cost EMI/Additional Exchange Offers"
+                        price={77999.0}
+                        rating={5}
+                        image="https://images-na.ssl-images-amazon.com/images/I/71HQNbn0LFL._SL1500_.jpg"
+                    />
+                </div>
+
+                <div className="home__row">
+                    <Product
+                        id="4903852"
+                        title="Legend of Suheldev: The King Who Saved India Paperback – 20 June 2020"
+                        price={291.0}
+                        rating={4}
+                        image="https://images-na.ssl-images-amazon.com/images/I/91HT7rB8tfL.jpg"
+                    />
+                    <Product
+                        id="12444141"
+                        title="Samsung Galaxy Buds Live (SM-R180NZKAINU) Mystic Black"
+                        price={14990.0}
+                        rating={4}
+                        image="https://images-na.ssl-images-amazon.com/images/I/71cSYFuuCGL._SL1500_.jpg"
+                    />
+                </div>
+
             </div>
         </div>
     )

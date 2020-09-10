@@ -1,7 +1,7 @@
 .checkout {
     display: flex;
     padding: 20px;
-    background-color: white;
+    background-color: rgba(234,237,237);
     height: max-content;
   }
   
@@ -14,4 +14,6 @@
   .checkout__ad {
     width: 100%;
     margin-bottom: 10px;
+    border-radius: 10px;
+    margin-left: -10px;
   }
