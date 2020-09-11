@@ -13,6 +13,14 @@ const reducer = (state, action) => {
                 ...state,
                 basket: [...state.basket, action.item],
             };
+
+        case "EMPTY_BASKET":
+            //Empty Basket
+            return {
+                ...state,
+                basket: [],
+            };
+
         case "REMOVE_FROM_BASKET":
             let newBasket = [...state.basket];
 

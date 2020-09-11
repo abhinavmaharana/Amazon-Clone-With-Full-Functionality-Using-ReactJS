@@ -7,7 +7,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 
 const CheckoutProduct = forwardRef((props, ref) => {
-    const { id, title, image, price, rating } = props;
+    const { id, title, image, price, rating, hideButton } = props;
     const [state, dispatch] = useStateValue();
     const removeFromBasket = () => {
         // remove item from basket....
@@ -37,7 +37,7 @@ const CheckoutProduct = forwardRef((props, ref) => {
                             <p>⭐</p>
                         ))}
                 </div>
-                <button onClick={removeFromBasket}>Remove from Basket</button>
+                {!hideButton && (<button onClick={removeFromBasket}>Remove from Basket</button>)}
                 <ToastContainer
                     position="top-center"
                     autoClose={4000}
@@ -45,6 +45,7 @@ const CheckoutProduct = forwardRef((props, ref) => {
                     hideProgressBar={false}
                     transition={Zoom}
                 />
+
             </div>
         </div>
     );

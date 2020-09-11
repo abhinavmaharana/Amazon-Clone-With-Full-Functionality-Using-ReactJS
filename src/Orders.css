@@ -1,0 +1,13 @@
+.orders {
+    padding: 20px 80px;
+}
+
+.orders > h1 {
+    margin: 20px 0;
+}
+
+.orders > h3 {
+    margin-bottom: 10px;
+    color: green;
+    font-size: 30px;
+}
